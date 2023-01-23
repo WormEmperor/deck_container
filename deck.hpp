@@ -5,6 +5,8 @@
 #include <algorithm>
 #include <iostream>
 
+// Tested with g++ -std=c++20
+
 template <typename T>
 class Deck {
     public:
