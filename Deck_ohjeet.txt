@@ -1,0 +1,25 @@
+Korttipakka - container
+=======================
+
+Tee luokka "Deck", joka kuvaa korttipakan kaltaista
+containeria.  Deck:in tulee pystyä sisältämään mitä tahansa
+yhtä tyyppiä.  (Esim. Deck<int> olisi kokoelma int-tyypin
+muuttujia).
+
+Luokalla tulee olla seuraavat ominaisuudet
+    - Toteuttaa vaatimukset jotka on esitetty https://en.cppreference.com/w/cpp/named_req/Container
+    - Toteuttaa lisäksi seuraavat funktiot
+        - `top()`
+            - Palauttaa "ylimmän" arvon kokoelmasta
+        - `bottom()`
+            - Palauttaa "alimman" arvon kokoelmasta
+        - `draw()`
+            - Poistaa "ylimmän" arvon kokoelmasta, ja palauttaa sen
+        - `add(T)`
+            - Lisää arvon pakan päälle
+        - `shuffle(...)`
+            - Sekoittaa kokoelman elementtien järjestyksen
+            - Voi olla järkevää antaa parametreja tälle funktiolle
+
+- Luokka voi käyttää standardikirjastossa valmiita olevia
+  kokoelmia säilömään elementit.  (i.e. Luokka saa olla adapteri)
