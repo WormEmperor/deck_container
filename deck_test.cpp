@@ -12,7 +12,22 @@ constexpr void print_deck(Deck<T> deck) { // prints deck in the form {a, b, c}
 
 int main() {
     Deck<int> deck = {1, 2, 3};
+    std::cout << "Initial deck:\n";
     print_deck(deck);
-    
+   
+    std::cout << "Drew " << deck.draw() << "\n";
+    std::cout << "After drawing:\n";
+    print_deck(deck);
+
+    std::cout << "After adding 5:\n";
+    deck.add(5);
+    print_deck(deck);
+
+    std::cout << "Print top and bottom:\n";
+    std::cout << deck.top() << ", " << deck.bottom() << "\n";
+
+    std::cout << "After shuffling:\n";
+    deck.shuffle();
+    print_deck(deck);
     return 0;
 }
